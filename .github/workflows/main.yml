@@ -12,12 +12,6 @@ jobs:
       # Checkout the code
       - uses: actions/checkout@v3
 
-      # Install .NET Core SDK
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v3
-        with:
-          dotnet-version: '7.0.0'
-
       # Publish the site
       - name: Publish
         #      Don't missing to add "p:GHPages=true". 👇
