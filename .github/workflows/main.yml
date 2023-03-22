@@ -12,6 +12,10 @@ jobs:
       # Checkout the code
       - uses: actions/checkout@v3
 
+      # Check net versios
+      - name: CheckSdks
+        run: dotnet sdk check
+        
       # Publish the site
       - name: Publish
         #      Don't missing to add "p:GHPages=true". 👇
